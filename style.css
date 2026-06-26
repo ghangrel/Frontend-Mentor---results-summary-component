@@ -45,8 +45,8 @@ body {
 .card {
     display: flex;
     flex-direction: row;
-    width: 740px;
-    height: 510px;
+    width: 46.25rem;
+    height: 31.875rem;
     justify-content: space-between;
     background: var(--white);
     border-radius: 2rem;
@@ -126,8 +126,8 @@ body {
     background: linear-gradient(to bottom, var(--VioletBlue), var(--PersianBlue));
     padding: 1rem;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
 }
 
 h2 {
@@ -207,10 +207,10 @@ button:hover {
     background: var(--linearA);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .card {
         display: flex;
-        width: 375px;
+        width: 23.4375rem;
         height: auto;
         flex-direction: column;
         border-radius: 0 0 2rem 2rem;
@@ -252,7 +252,6 @@ button:hover {
 
     .data {
         gap: 1rem;
-        padding: 0.5;
     }
 
     .stats {
@@ -263,6 +262,12 @@ button:hover {
         width: 95%;
     }
 
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+    transition-duration: 0s !important;
+    }
 }
 
 
